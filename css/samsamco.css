@@ -16,11 +16,11 @@ body {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0; }
+  margin: 0;
+  }
 h1 { font-size: 3.0rem; line-height: 1;  letter-spacing: -.1rem; }
 h2 { font-size: 3.0rem; line-height: 1; letter-spacing: -.1rem; }
-h3 { font-size: 1.5rem; line-height: 1;  letter-spacing: -.05rem; }
+h3 { font-size: 1.25rem; line-height: 1;  letter-spacing: -.05rem; }
 
 p {
   margin-top: 0; }
@@ -28,14 +28,32 @@ p {
 
 /* Components
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.title {
+  margin: 2rem 0 0 2rem;
+}
 
-.container {
+
+.year {
+  margin-top: .25rem;
+  }
+
+.flex-container {
   height: 100vh;
-  width: 100vw;
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
-}
+  }
+
+.flex-item {
+  flex: 1;
+  }
+
+.item-start {
+  }
+
+.item-end {
+  }
 
 a {
   color: #1EAEDB; }
@@ -43,26 +61,36 @@ a:hover {
   color: #0FA0CE; }
 
 .ornament {
-  width: 2rem;
+  width: 3rem;
   height: .25rem;
+  margin: 2rem 0 2rem 2rem;
   background-color: #17181a;
 }
+
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 ul {
+  margin-left: 2rem;
   list-style: none;
   padding-left: 0;
   margin-top: 0; }
 
+ul.positions {
+  }
+
+ul.menu {
+  margin-top: 4rem;
+  }
+
 li {
   margin-bottom: 1rem; }
 
-li.current {
+li.primary {
   }
 
-li.past {
+li.secondary {
   color: #E3E4E6; }
 
 
@@ -89,16 +117,26 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+  html { font-size: 62.5%; }
+  .flex-container {max-width: 90%;  margin: auto;}
+}
 
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+/* Larger than phablet */
+@media (min-width: 550px) {
+  html { font-size: 75%; }
+  .flex-container {max-width: 80%;  margin: auto;}
+}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+  html { font-size: 87.5%; }
+}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+  html { font-size: 100%; }
+}
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
