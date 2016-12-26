@@ -91,29 +91,12 @@ li.primary {
   }
 
 li.secondary {
-  color: #E3E4E6; }
-
-
-
-/* Colors
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.solid-one { color: #17181A; }
-.solid-two { color: #515254; }
-.solid-three { color: #A6A7A9; }
-.solid-four { color: #E3E4E6; }
-.solid-five { color: #EFF0F2; }
-.solid-accent { color: #0042FF; }
+  color: #C8C9CB; }
 
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
+
 
 
 /* Larger than mobile */
