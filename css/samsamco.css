@@ -90,6 +90,7 @@ li.secondary {
 
 li a {
   color: #17181a;
+  text-decoration: none;
   }
 
 li a:hover {
@@ -97,7 +98,9 @@ li a:hover {
     }
 
 li a.secondary {
-  color: #D7D7D9; }
+  color: #D7D7D9;
+  text-decoration: none;
+ }
 
   li a.secondary:hover {
     color: #00ff00; }
