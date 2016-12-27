@@ -55,11 +55,6 @@ p {
 .item-end {
   }
 
-a {
-  color: #1EAEDB; }
-a:hover {
-  color: #0FA0CE; }
-
 .ornament {
   width: 3rem;
   height: .25rem;
@@ -91,7 +86,21 @@ li.primary {
   }
 
 li.secondary {
+  }
+
+li a {
+  color: #17181a;
+  }
+
+li a:hover {
+    color: #ff0000;
+    }
+
+li a.secondary {
   color: #D7D7D9; }
+
+  li a.secondary:hover {
+    color: #00ff00; }
 
 
 /* Media Queries
