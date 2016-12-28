@@ -101,13 +101,12 @@ li a {
   transition-timing-function: ease-out; }
 
 li a:visited {
-  color: #17181a;
-  text-decoration: none; }
+  color: #17181a; }
 
 li a:hover {
   color: #0022FF; }
 
-li a:active {
+li a:focus {
   color: #0022FF; }
 
 li.secondary a {
@@ -115,6 +114,11 @@ li.secondary a {
 
 li.secondary a:hover {
   color: #0022FF; }
+
+li.secondary a:focus {
+  color: #0022FF; }
+
+
 
 
 /* Media Queries
