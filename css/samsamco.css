@@ -97,6 +97,7 @@ li.secondary {
 li a {
   color: #17181a;
   text-decoration: none;
+  -webkit-transition: color .25s;
   transition: color .25s;
   transition-timing-function: ease-out; }
 
