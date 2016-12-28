@@ -22,8 +22,8 @@ h1 { font-size: 3.0rem; line-height: 1;  letter-spacing: -.1rem; }
 h2 { font-size: 3.0rem; line-height: 1; letter-spacing: -.1rem; }
 h3 { font-size: 1.25rem; line-height: 1;  letter-spacing: -.05rem; }
 
-p {
-  margin-top: 0; }
+p { font-size: 1.25rem; line-height: 1;  letter-spacing: -.05rem;
+  margin: .25rem 0 0 0; }
 
 
 /* Components
@@ -32,10 +32,6 @@ p {
   margin: 2rem 0 0 2rem;
 }
 
-
-.year {
-  margin-top: .25rem;
-  }
 
 .flex-container {
   height: 100vh;
@@ -49,19 +45,23 @@ p {
   flex: 1;
   }
 
-.item-start {
+.flex-item.first {
   }
 
-.item-end {
+.flex-item.last {
   }
 
 .ornament {
   width: 3rem;
   height: .25rem;
   margin: 2rem 0 2rem 2rem;
-  background-color: #17181a;
-}
+  background-color: #17181a; }
 
+.arrow {
+  font-size: 1.5rem;
+  top: -0.25rem;
+  position: relative;
+  padding-left: 0.5rem; }
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -72,12 +72,18 @@ ul {
   padding-left: 0;
   margin-top: 0; }
 
-ul.positions {
+ul h2 {
+  display: inline-block;
+}
+
+@media (min-width: 750px) {
+  ul.positions p {
+    margin-left: .5rem;
+    display: inline-block; }
   }
 
 ul.menu {
-  margin-top: 4rem;
-  }
+  margin-top: 4rem; }
 
 li {
   margin-bottom: 1rem; }
@@ -91,19 +97,24 @@ li.secondary {
 li a {
   color: #17181a;
   text-decoration: none;
-  }
+  transition: color .25s;
+  transition-timing-function: ease-out; }
+
+li a:visited {
+  color: #17181a;
+  text-decoration: none; }
 
 li a:hover {
-    color: #ff0000;
-    }
+  color: #0022FF; }
 
-li a.secondary {
-  color: #D7D7D9;
-  text-decoration: none;
- }
+li a:active {
+  color: #0022FF; }
 
-  li a.secondary:hover {
-    color: #00ff00; }
+li.secondary a {
+  color: #D7D7D9; }
+
+li.secondary a:hover {
+  color: #0022FF; }
 
 
 /* Media Queries
