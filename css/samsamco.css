@@ -23,7 +23,7 @@ h2 { font-size: 3.0rem; line-height: 1; letter-spacing: -.1rem; }
 h3 { font-size: 1.25rem; line-height: 1;  letter-spacing: -.05rem; }
 
 p { font-size: 1.25rem; line-height: 1;  letter-spacing: -.05rem;
-  margin: .25rem 0 0 0; }
+  margin: 0; }
 
 
 /* Components
@@ -103,6 +103,10 @@ li a {
 
 li a:visited {
   color: #17181a; }
+
+li a:active {
+  color: #0022FF; }
+
 
 li a:hover {
   color: #0022FF; }
